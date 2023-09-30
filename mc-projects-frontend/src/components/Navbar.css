@@ -1,0 +1,55 @@
+.navbar {
+  width: min-content;
+  height: min-content;
+  position: fixed;
+  background-color: var(--clr-primary-light);
+  border-radius: 100rem;
+  display: flex;
+  gap: 8px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--clr-primary-accent);
+  padding: 8px 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.navbar-icon-container:hover {
+  background-color: var(--clr-primary-accent);
+}
+
+.navbar-icon {
+  color: var(--clr-secondary-accent);
+  width: 25px;
+  height: 25px;
+}
+
+.navbar-link.active .navbar-icon-container {
+  background-color: var(--clr-secondary-dark);
+}
+.navbar-link.active .navbar-icon {
+  color: var(--clr-primary-light);
+}
+
+.navbar-icon-twitter {
+  color: var(--clr-secondary-accent);
+  width: 22px;
+  height: 22px;
+}
+
+.navbar-separator {
+  height: 24px;
+  width: 1px;
+  background-color: var(--clr-primary-accent);
+}
