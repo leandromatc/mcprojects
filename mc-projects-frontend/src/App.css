@@ -107,8 +107,3 @@ textarea:focus-visible {
   border: none;
   outline: none;
 }
-
-input:required,
-textarea:required {
-  border: 1px solid rgb(199, 22, 22);
-}
