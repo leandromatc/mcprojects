@@ -7,7 +7,7 @@
   --clr-main-btn: rgba(255, 255, 255, 0.16);
   --clr-secondary: rgb(255, 255, 255);
   --clr-secondary-dark: rgba(255, 255, 255, 0.788);
-  --clr-secondary-accent: rgba(255, 255, 255, 0.555);
+  --clr-secondary-accent: rgba(255, 255, 255, 0.479);
   --inter-font: "Inter", sans-serif;
   --transition-default: all 0.1s ease-in-out;
 }
@@ -31,6 +31,7 @@ body {
 
 .container {
   max-width: 768px;
+  width: 100vw;
   padding: 2rem 0;
 }
 
@@ -53,6 +54,16 @@ body {
   font-size: 1rem;
   color: var(--clr-secondary);
   transition: var(--transition-default);
+  text-wrap: nowrap;
+}
+
+.text {
+  color: var(--clr-secondary-accent);
+}
+
+.text-emphasis {
+  color: var(--clr-secondary);
+  font-weight: 500;
 }
 
 .main-btn:hover {
@@ -65,4 +76,39 @@ body {
 
 .text-wrap {
   text-wrap: nowrap;
+}
+
+.page-title {
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
+}
+.page-title {
+  color: var(--clr-secondary-accent);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  padding: 0.8rem 0.8rem;
+  width: 100%;
+  background-color: var(--clr-primary-accent);
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--clr-secondary-);
+  font-size: 1rem;
+  caret-color: var(--clr-secondary);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+input:required,
+textarea:required {
+  border: 1px solid rgb(199, 22, 22);
 }
