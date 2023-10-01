@@ -20,7 +20,7 @@ function Contact() {
           <p className="introduction-available">
             Disponible para nuevas oportunidades.
           </p>
-          <Link to={"contact"}>
+          <Link to={"https://calendly.com/matosasleandro/30min"}>
             <button className="main-btn">
               <AiOutlineCalendar className="icon-btn" />
               Agendá una llamada
