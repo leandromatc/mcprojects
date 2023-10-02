@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </>
   );
 }

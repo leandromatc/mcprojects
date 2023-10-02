@@ -85,7 +85,7 @@ function Home() {
               <div className="find-link-container">
                 <p>Bristol</p>
                 <span className="span-line"></span>
-                <p>Branding</p>
+                <p>Logo</p>
                 &middot;
                 <p>2021</p>
               </div>

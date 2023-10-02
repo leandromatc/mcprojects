@@ -114,5 +114,11 @@ textarea:focus-visible {
   height: 10px;
   border-radius: 50%;
   background-color: rgb(5, 184, 5);
-  margin-right: 5px;
+  margin-right: 0.5rem;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 0rem 1rem;
+  margin-bottom: 5rem;
 }

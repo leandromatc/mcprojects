@@ -1,0 +1,22 @@
+.projects-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--clr-secondary-accent);
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  color: var(--clr-secondary-accent);
+}
+
+.project-img {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.project-img:hover {
+  opacity: 0.95;
+}
