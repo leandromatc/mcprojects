@@ -50,7 +50,7 @@ function Projects() {
               </div>
             </div>
             <div className="other-projects">
-              <div className="main-project project-container">
+              <div className="project-container">
                 <div className="project-details">
                   <p>Flyer</p>
                   <p>2023</p>
@@ -68,7 +68,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="main-project project-container">
+              <div className="project-container">
                 <div className="project-details">
                   <p>Motion Graphic</p>
                   <p>2023</p>
@@ -84,6 +84,24 @@ function Projects() {
                   <div className="tec-icons">
                     <SiAdobeillustrator className="tec-icon adobe" />
                     <SiAdobeaftereffects className="tec-icon adobe" />
+                  </div>
+                </div>
+              </div>
+              <div className="project-container">
+                <div className="project-details">
+                  <p>Logo</p>
+                  <p>2021</p>
+                </div>
+                <img
+                  src="/img/cab-escudo.png"
+                  alt="Escudo Bristol"
+                  className="project-img"
+                />
+                <h4 className="project-title">Escudo Bristol</h4>
+                <div className="project-tecnologies">
+                  <p className="text">Tecnologías usadas:</p>
+                  <div className="tec-icons">
+                    <SiAdobeillustrator className="tec-icon adobe" />
                   </div>
                 </div>
               </div>

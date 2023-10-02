@@ -15,9 +15,14 @@ form {
   gap: 1rem;
 }
 
+input {
+  color: var(--clr-secondary);
+}
+
 textarea {
   width: 100%;
   resize: vertical;
+  color: var(--clr-secondary);
 }
 .form-container {
   border-top: 1px solid var(--clr-primary-accent);

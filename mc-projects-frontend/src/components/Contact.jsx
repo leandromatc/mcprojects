@@ -2,8 +2,13 @@ import AnimatedPages from "./AnimatedPages";
 import { Link } from "react-router-dom";
 import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
 import "./Contact.css";
+import { useState } from "react";
 
 function Contact() {
+  const [name, setName] = useState("");
+  console.log(name);
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <AnimatedPages>
       <div className="container">
@@ -36,6 +41,7 @@ function Contact() {
                 id="name"
                 name="name"
                 placeholder="Nombre"
+                onChange={() => setName(name)}
                 required
               />
               <input

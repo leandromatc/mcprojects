@@ -1,7 +1,8 @@
 const express = require("express");
-const pageRouter = express.Router();
+const router = express.Router();
 const pageController = require("../controllers/pageContoller");
 
-pageRouter.get("/", pageController.index);
+router.get("/", pageController.index);
+router.post("/contact-mail", pageController.mail);
 
 module.exports = pageRouter;
