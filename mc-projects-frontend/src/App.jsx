@@ -20,8 +20,8 @@ function App() {
           <Route path="clients" element={<Clients />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </AnimatePresence>
-      <Footer />
     </>
   );
 }
