@@ -10,12 +10,17 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("entro");
     await axios({
       method: "POST",
-      url: `${import.meta.env.VITE_API_URL}/contact-mail`,
+      url: `${import.meta.env.VITE_API_URL}/contact`,
       data: { name, email, message },
     });
+    setEmail("");
+    setName("");
+    setMessage("");
   };
   return (
     <AnimatedPages>
