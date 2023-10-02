@@ -52,7 +52,25 @@ function Projects() {
             <div className="other-projects">
               <div className="project-container">
                 <div className="project-details">
-                  <p>Flyer</p>
+                  <p>Poster</p>
+                  <p>2023</p>
+                </div>
+                <img
+                  src="/img/conferencia-ofi.png"
+                  alt="Escudo Bristol"
+                  className="project-img"
+                />
+                <h4 className="project-title">Conferencia en OFI</h4>
+                <div className="project-tecnologies">
+                  <p className="text">Tecnologías usadas:</p>
+                  <div className="tec-icons">
+                    <SiAdobephotoshop className="tec-icon adobe" />
+                  </div>
+                </div>
+              </div>
+              <div className="project-container">
+                <div className="project-details">
+                  <p>Poster</p>
                   <p>2023</p>
                 </div>
                 <img
@@ -84,6 +102,25 @@ function Projects() {
                   <div className="tec-icons">
                     <SiAdobeillustrator className="tec-icon adobe" />
                     <SiAdobeaftereffects className="tec-icon adobe" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-container">
+                <div className="project-details">
+                  <p>Logo</p>
+                  <p>2022</p>
+                </div>
+                <img
+                  src="/img/logo-ldfs.png"
+                  alt="Escudo Bristol"
+                  className="project-img"
+                />
+                <h4 className="project-title">Logo campeonatos LDFS</h4>
+                <div className="project-tecnologies">
+                  <p className="text">Tecnologías usadas:</p>
+                  <div className="tec-icons">
+                    <SiAdobeillustrator className="tec-icon adobe" />
                   </div>
                 </div>
               </div>

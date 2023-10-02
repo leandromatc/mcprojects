@@ -5,4 +5,4 @@ const pageController = require("../controllers/pageContoller");
 router.get("/", pageController.index);
 router.post("/contact-mail", pageController.mail);
 
-module.exports = pageRouter;
+module.exports = router;

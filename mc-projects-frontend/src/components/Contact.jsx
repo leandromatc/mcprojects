@@ -3,12 +3,20 @@ import { Link } from "react-router-dom";
 import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
 import "./Contact.css";
 import { useState } from "react";
+import axios from "axios";
 
 function Contact() {
   const [name, setName] = useState("");
-  console.log(name);
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = async () => {
+    await axios({
+      method: "POST",
+      url: `${import.meta.env.VITE_API_URL}/contact-mail`,
+      data: { name, email, message },
+    });
+  };
   return (
     <AnimatedPages>
       <div className="container">
@@ -34,14 +42,15 @@ function Contact() {
           </Link>
         </section>
         <section className="section-container form-container">
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <div className="contact-container">
               <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Nombre"
-                onChange={() => setName(name)}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 required
               />
               <input
@@ -49,6 +58,8 @@ function Contact() {
                 id="email"
                 name="email"
                 placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -58,6 +69,8 @@ function Contact() {
               cols="30"
               rows="10"
               placeholder="Mensaje"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
             <div className="btn-container">
