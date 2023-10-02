@@ -33,7 +33,8 @@ function Home() {
             Diseñador Gráfico.
           </p>
           <p className="introduction-available">
-            Disponible para nuevas oportunidades.
+            <span className="available"></span>Disponible para nuevas
+            oportunidades.
           </p>
           <Link to={"contact"}>
             <button className="main-btn">

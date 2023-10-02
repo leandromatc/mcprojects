@@ -107,3 +107,12 @@ textarea:focus-visible {
   border: none;
   outline: none;
 }
+
+.available {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(5, 184, 5);
+  margin-right: 5px;
+}

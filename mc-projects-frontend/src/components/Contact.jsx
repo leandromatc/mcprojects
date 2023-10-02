@@ -18,7 +18,8 @@ function Contact() {
             ¿Estás buscando empezar un proyecto? No dudes en consultar!
           </p>
           <p className="introduction-available">
-            Disponible para nuevas oportunidades.
+            <span className="available"></span>Disponible para nuevas
+            oportunidades.
           </p>
           <Link to={"https://calendly.com/matosasleandro/30min"}>
             <button className="main-btn">
