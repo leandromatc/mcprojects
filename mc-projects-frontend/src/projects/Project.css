@@ -45,6 +45,11 @@
   color: var(--clr-secondary-accent);
 }
 
+.project-main-img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
 table {
   width: 40%;
 }

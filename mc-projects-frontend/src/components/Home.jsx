@@ -72,7 +72,7 @@ function Home() {
                 <p>2022</p>
               </div>
             </Link>
-            <Link to={"#"} target="_blank">
+            <Link to={"/projects/logo-ldfs"}>
               <div className="find-link-container">
                 <p>LDFS</p>
                 <span className="span-line"></span>
@@ -81,7 +81,7 @@ function Home() {
                 <p>2022</p>
               </div>
             </Link>
-            <Link to={"#"} target="_blank">
+            <Link to={"/projects/logo-bristol"}>
               <div className="find-link-container">
                 <p>Bristol</p>
                 <span className="span-line"></span>

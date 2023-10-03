@@ -10,6 +10,11 @@ import Footer from "./components/Footer";
 import Doppios from "./projects/Doppios";
 import { useEffect } from "react";
 import PacaCamp from "./projects/PacaCamp";
+import PosterJanine from "./projects/PosterJanine";
+import PosterBailazo from "./projects/PosterBailazo1";
+import LogoLdfs from "./projects/LogoLdfs";
+import LogoBristol from "./projects/LogoBristol";
+import Bailazo from "./projects/Bailazo";
 
 function App() {
   const location = useLocation();
@@ -27,6 +32,11 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="projects/doppios" element={<Doppios />} />
           <Route path="projects/paca-campeon" element={<PacaCamp />} />
+          <Route path="projects/poster-janine" element={<PosterJanine />} />
+          <Route path="projects/poster-bailazo" element={<PosterBailazo />} />
+          <Route path="projects/bailazo" element={<Bailazo />} />
+          <Route path="projects/logo-ldfs" element={<LogoLdfs />} />
+          <Route path="projects/logo-bristol" element={<LogoBristol />} />
         </Routes>
         <Footer />
       </AnimatePresence>

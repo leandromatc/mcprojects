@@ -57,15 +57,43 @@ function Projects() {
             <div className="other-projects">
               <div className="project-container">
                 <div className="project-details">
+                  <p>Branding</p>
+                  <p>2023</p>
+                </div>
+                <Link to={"/projects/bailazo"}>
+                  <img
+                    src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/bailazo.png"
+                    alt="Escudo Bristol"
+                    className="project-img"
+                  />
+                </Link>
+                <Link to={"/projects/poster-janine"}>
+                  <h4 className="project-title">Bailazo 3a edición</h4>
+                </Link>
+                <div className="project-tecnologies">
+                  <p className="text">Tecnologías usadas:</p>
+                  <div className="tec-icons">
+                    <SiAdobephotoshop className="tec-icon adobe" />
+                    <SiAdobeillustrator className="tec-icon adobe" />
+                    <SiAdobeaftereffects className="tec-icon adobe" />
+                  </div>
+                </div>
+              </div>
+              <div className="project-container">
+                <div className="project-details">
                   <p>Poster</p>
                   <p>2023</p>
                 </div>
-                <img
-                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/conferencia-ofi.png"
-                  alt="Escudo Bristol"
-                  className="project-img"
-                />
-                <h4 className="project-title">Conferencia en OFI</h4>
+                <Link to={"/projects/poster-janine"}>
+                  <img
+                    src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/conferencia-ofi.png"
+                    alt="Escudo Bristol"
+                    className="project-img"
+                  />
+                </Link>
+                <Link to={"/projects/poster-janine"}>
+                  <h4 className="project-title">Conferencia Janine Szpara</h4>
+                </Link>
                 <div className="project-tecnologies">
                   <p className="text">Tecnologías usadas:</p>
                   <div className="tec-icons">
@@ -78,12 +106,16 @@ function Projects() {
                   <p>Poster</p>
                   <p>2023</p>
                 </div>
-                <img
-                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/bailazo-flyer.png"
-                  alt="Doppios"
-                  className="project-img"
-                />
-                <h4 className="project-title">Bailazo del Parque</h4>
+                <Link to={"/projects/poster-bailazo"}>
+                  <img
+                    src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/bailazo-flyer.png"
+                    alt="Doppios"
+                    className="project-img"
+                  />
+                </Link>
+                <Link to={"/projects/poster-bailazo"}>
+                  <h4 className="project-title">Bailazo del Parque</h4>
+                </Link>
                 <div className="project-tecnologies">
                   <p className="text">Tecnologías usadas:</p>
                   <div className="tec-icons">
@@ -120,12 +152,16 @@ function Projects() {
                   <p>Logo</p>
                   <p>2022</p>
                 </div>
-                <img
-                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/logo-ldfs.png"
-                  alt="Escudo Bristol"
-                  className="project-img"
-                />
-                <h4 className="project-title">Logo campeonatos LDFS</h4>
+                <Link to={"/projects/logo-ldfs"}>
+                  <img
+                    src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/logo-ldfs.png"
+                    alt="Escudo Bristol"
+                    className="project-img"
+                  />
+                </Link>
+                <Link to={"/projects/logo-ldfs"}>
+                  <h4 className="project-title">Logo campeonatos LDFS</h4>
+                </Link>
                 <div className="project-tecnologies">
                   <p className="text">Tecnologías usadas:</p>
                   <div className="tec-icons">
@@ -138,12 +174,16 @@ function Projects() {
                   <p>Logo</p>
                   <p>2021</p>
                 </div>
-                <img
-                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/cab-escudo.png"
-                  alt="Escudo Bristol"
-                  className="project-img"
-                />
-                <h4 className="project-title">Escudo Bristol</h4>
+                <Link to={"/projects/logo-bristol"}>
+                  <img
+                    src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/cab-escudo.png"
+                    alt="Escudo Bristol"
+                    className="project-img"
+                  />
+                </Link>
+                <Link to={"/projects/logo-bristol"}>
+                  <h4 className="project-title">Escudo Bristol</h4>
+                </Link>
                 <div className="project-tecnologies">
                   <p className="text">Tecnologías usadas:</p>
                   <div className="tec-icons">
