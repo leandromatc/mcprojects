@@ -4,6 +4,7 @@ async function Mail(subject, html) {
   // Configura el transporte de correo electrónico
   const transporter = nodemailer.createTransport({
     service: "gmail",
+    host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
