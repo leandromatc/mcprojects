@@ -11,12 +11,16 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     await axios({
       method: "POST",
       url: `${import.meta.env.VITE_API_URL}/contact/mail`,
       data: { name, email, message },
     });
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (

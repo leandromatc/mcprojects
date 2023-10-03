@@ -14,14 +14,22 @@ function Clients() {
           </p>
           <div className="clients">
             <div className="client">
-              <img src="/img/cv10.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/cv10.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">CV10 Mercedes</h4>
                 <p className="client-job">Social Media</p>
               </div>
             </div>
             <div className="client">
-              <img src="/img/LDFS.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/LDFS.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">
                   Liga Departamental de Fútbol de Soriano
@@ -30,42 +38,66 @@ function Clients() {
               </div>
             </div>
             <div className="client">
-              <img src="/img/bristol.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/bristol.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">Club Atlético Bristol</h4>
                 <p className="client-job">Logo &middot; Social Media</p>
               </div>
             </div>
             <div className="client">
-              <img src="/img/veintitres.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/veintitres.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">Veintitrés Agency</h4>
                 <p className="client-job">Logo &middot; Social Media</p>
               </div>
             </div>
             <div className="client">
-              <img src="/img/cavani.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/cavani.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">Cavani Helados Artesanales</h4>
                 <p className="client-job">Social Media</p>
               </div>
             </div>
             <div className="client">
-              <img src="/img/js.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/js.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">JS Automotores</h4>
                 <p className="client-job">Social Media</p>
               </div>
             </div>
             <div className="client">
-              <img src="/img/paca.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/paca.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">Pacaembu Bigua</h4>
                 <p className="client-job">Social Media</p>
               </div>
             </div>
             <div className="client">
-              <img src="/img/ofi.png" alt="" className="client-img" />
+              <img
+                src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/ofi.png"
+                alt=""
+                className="client-img"
+              />
               <div className="client-detail">
                 <h4 className="client-title">
                   Organización de Fútbol del Interior

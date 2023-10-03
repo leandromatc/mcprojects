@@ -54,7 +54,7 @@ function Home() {
             </Link>
           </div>
           <div className="find-links">
-            <Link to={"#"} target="_blank">
+            <Link to={"/projects/doppios"}>
               <div className="find-link-container">
                 <p>Doppios</p>
                 <span className="span-line"></span>
@@ -63,7 +63,7 @@ function Home() {
                 <p>2023</p>
               </div>
             </Link>
-            <Link to={"#"} target="_blank">
+            <Link to={"/projects/paca-campeon"}>
               <div className="find-link-container">
                 <p>Pacaembu</p>
                 <span className="span-line"></span>

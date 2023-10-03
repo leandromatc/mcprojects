@@ -15,6 +15,7 @@ import {
   SiAdobeaftereffects,
   SiAdobeillustrator,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -29,12 +30,16 @@ function Projects() {
                 <p>E-Commerce</p>
                 <p>2023</p>
               </div>
-              <img
-                src="/img/doppios.png"
-                alt="Doppios"
-                className="project-img"
-              />
-              <h4 className="project-title">Doppios.</h4>
+              <Link to={"/projects/doppios"}>
+                <img
+                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/doppios.png"
+                  alt="Doppios"
+                  className="project-img"
+                />
+              </Link>
+              <Link to={"/projects/doppios"}>
+                <h4 className="project-title">Doppios.</h4>
+              </Link>
               <div className="project-tecnologies">
                 <p className="text">Tecnologías usadas:</p>
                 <div className="tec-icons">
@@ -56,7 +61,7 @@ function Projects() {
                   <p>2023</p>
                 </div>
                 <img
-                  src="/img/conferencia-ofi.png"
+                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/conferencia-ofi.png"
                   alt="Escudo Bristol"
                   className="project-img"
                 />
@@ -74,7 +79,7 @@ function Projects() {
                   <p>2023</p>
                 </div>
                 <img
-                  src="/img/bailazo-flyer.png"
+                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/bailazo-flyer.png"
                   alt="Doppios"
                   className="project-img"
                 />
@@ -91,12 +96,16 @@ function Projects() {
                   <p>Motion Graphic</p>
                   <p>2023</p>
                 </div>
-                <img
-                  src="/img/paca-camp.png"
-                  alt="Doppios"
-                  className="project-img"
-                />
-                <h4 className="project-title">Pacaembú Bigua campeón</h4>
+                <Link to={"/projects/paca-campeon"}>
+                  <img
+                    src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/paca-camp.png"
+                    alt="Doppios"
+                    className="project-img"
+                  />
+                </Link>
+                <Link to={"/projects/paca-campeon"}>
+                  <h4 className="project-title">Pacaembú Bigua campeón</h4>
+                </Link>
                 <div className="project-tecnologies">
                   <p className="text">Tecnologías usadas:</p>
                   <div className="tec-icons">
@@ -112,7 +121,7 @@ function Projects() {
                   <p>2022</p>
                 </div>
                 <img
-                  src="/img/logo-ldfs.png"
+                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/logo-ldfs.png"
                   alt="Escudo Bristol"
                   className="project-img"
                 />
@@ -130,7 +139,7 @@ function Projects() {
                   <p>2021</p>
                 </div>
                 <img
-                  src="/img/cab-escudo.png"
+                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/cab-escudo.png"
                   alt="Escudo Bristol"
                   className="project-img"
                 />
