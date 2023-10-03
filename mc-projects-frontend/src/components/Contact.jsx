@@ -4,24 +4,21 @@ import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
 import "./Contact.css";
 import { useState } from "react";
 import axios from "axios";
+import { useEffect } from "react";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("entro");
+  const handleSubmit = async () => {
     await axios({
       method: "POST",
-      url: `${import.meta.env.VITE_API_URL}/contact`,
+      url: `${import.meta.env.VITE_API_URL}/contact/mail`,
       data: { name, email, message },
     });
-    setEmail("");
-    setName("");
-    setMessage("");
   };
+
   return (
     <AnimatedPages>
       <div className="container">

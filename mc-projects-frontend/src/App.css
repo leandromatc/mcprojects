@@ -76,6 +76,7 @@ body {
 
 .text-wrap {
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .page-title {
