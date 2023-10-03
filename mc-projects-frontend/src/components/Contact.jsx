@@ -39,12 +39,6 @@ function Contact() {
             <span className="available"></span>Disponible para nuevas
             oportunidades.
           </p>
-          <Link to={"https://calendly.com/matosasleandro/30min"}>
-            <button className="main-btn">
-              <AiOutlineCalendar className="icon-btn" />
-              Agendá una llamada
-            </button>
-          </Link>
         </section>
         <section className="section-container form-container">
           <form onSubmit={handleSubmit}>
