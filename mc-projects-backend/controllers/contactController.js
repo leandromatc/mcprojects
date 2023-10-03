@@ -4,6 +4,8 @@ async function Mail(subject, html) {
   // Configura el transporte de correo electrónico
   const transporter = nodemailer.createTransport({
     service: "gmail",
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.MAIL, // Cambia esto por tu dirección de correo electrónico de Gmail
       pass: process.env.MAIL_PASS, // Cambia esto por tu contraseña de Gmail o usa una contraseña de aplicación si la tienes configurada
