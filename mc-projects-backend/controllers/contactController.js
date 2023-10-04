@@ -1,7 +1,9 @@
 const nodemailer = require("nodemailer");
 const sgMail = require("@sendgrid/mail");
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(
+  "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"
+);
 
 const index = async (req, res) => {
   return res.json("Esto funciona");
