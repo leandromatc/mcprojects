@@ -1,35 +1,7 @@
 const nodemailer = require("nodemailer");
+const sgMail = require("@sendgrid/mail");
 
-async function Mail(subject, html) {
-  // Configura el transporte de correo electrónico
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.MAIL, // Cambia esto por tu dirección de correo electrónico de Gmail
-      pass: process.env.MAIL_PASS, // Cambia esto por tu contraseña de Gmail o usa una contraseña de aplicación si la tienes configurada
-    },
-    authMethod: "PLAIN",
-  });
-
-  // Define el correo electrónico que quieres enviar
-  const mailOptions = {
-    from: process.env.MAIL,
-    to: process.env.MAIL, // Cambia esto por la dirección de correo electrónico del destinatario
-    subject: subject,
-    html: html,
-  };
-  // Envía el correo electrónico
-  await transporter.sendMail(mailOptions, (err, res) => {
-    if (err) {
-      console.log("Error al enviar el correo electrónico:", err);
-    } else {
-      console.log("Correo electrónico enviado con éxito:");
-    }
-  });
-}
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const index = async (req, res) => {
   return res.json("Esto funciona");
@@ -39,22 +11,33 @@ const store = async (req, res) => {
   const name = req.body.name;
   const contact = req.body.email;
   const message = req.body.message;
-  const subject = "Mensaje desde la web MC Projects";
-  const html = `<!DOCTYPE html>
-   <html lang="en">
-     <head>
-       <meta charset="UTF-8" />
-       <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     </head> 
-   <body>
-      <p>Mensaje de: ${name}</p>
-      <p>${contact}</p>
-      <p>${message}</p>
-     </body>
- </html>`;
 
-  Mail(subject, html);
+  const mail = {
+    to: "matosasleandro@gmail.com",
+    from: "lnmatosas@hotmail.com",
+    subject: "Mensaje desde MC Projects",
+    html: `<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head> 
+    <body>
+       <p>Mensaje de: ${name}</p>
+       <p>${contact}</p>
+       <p>${message}</p>
+      </body>
+  </html>`,
+  };
+  try {
+    await sgMail
+      .send(mail)
+      .then((response) => console.log("Email sent..."))
+      .catch((err) => console.log(err));
+  } catch (err) {
+    console.log(err);
+  }
   return res.json("Email enviado");
 };
 
