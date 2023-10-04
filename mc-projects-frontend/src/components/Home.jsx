@@ -20,12 +20,14 @@ function Home() {
           </div>
         </section>
         <div className="introduction">
-          <h2 className="introduction-title">
+          <div className="introduction-title text-wrap">
             Soy un{" "}
-            <span className="introduction-emphasis">
-              desarrollador full stack.
-            </span>
-          </h2>
+            <div className="slider">
+              <div>desarrollador full stack</div>
+              <div>diseñador gráfico</div>
+              <div>estudiante de ing. en computación</div>
+            </div>
+          </div>
           <p className="introduction-desc">
             Hola! Me llamo Leandro Matosas, tengo 27 años y vivo en Montevideo,
             Uruguay. Soy un estudiante de Ingeniería en Computación, pero al
