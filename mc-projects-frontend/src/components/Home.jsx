@@ -50,7 +50,7 @@ function Home() {
             <h3 className="section-title">Proyectos</h3>
             <Link to={"projects"}>
               <div className="projects-text-container">
-                <p className="all-projects">All</p>
+                <p className="all-projects">Todos</p>
                 <BiRightArrowAlt className="arrow-icon" />
               </div>
             </Link>
@@ -104,28 +104,28 @@ function Home() {
               <div className="find-link-container">
                 <p>Linkedin</p>
                 <span className="span-line"></span>
-                <p>Follow</p>
+                <p>Seguime</p>
               </div>
             </Link>
             <Link to={"https://github.com/leandromatc"} target="_blank">
               <div className="find-link-container">
                 <p>Github</p>
                 <span className="span-line"></span>
-                <p>Follow</p>
+                <p>Seguime</p>
               </div>
             </Link>
             <Link to={"https://instagram.com/mc__projects"} target="_blank">
               <div className="find-link-container">
                 <p>Instagram</p>
                 <span className="span-line"></span>
-                <p>Follow</p>
+                <p>Seguime</p>
               </div>
             </Link>
             <Link to={"https://x.com/mc__projects"} target="_blank">
               <div className="find-link-container">
                 <p>X</p>
                 <span className="span-line"></span>
-                <p>Follow</p>
+                <p>Seguime</p>
               </div>
             </Link>
           </div>
