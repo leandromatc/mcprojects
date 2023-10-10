@@ -17,6 +17,7 @@
 }
 
 .navbar-icon-container {
+  position: relative;
   width: 40px;
   height: 40px;
   display: flex;
@@ -53,4 +54,12 @@
   height: 24px;
   width: 1px;
   background-color: var(--clr-primary-accent);
+}
+
+.tooltip {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary-light);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 8px;
 }
