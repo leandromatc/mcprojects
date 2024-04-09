@@ -27,6 +27,57 @@ function Projects() {
           <div className="projects-section">
             <div className="main-project project-container">
               <div className="project-details">
+                <p>Portfolio</p>
+                <p>2023</p>
+              </div>
+              <Link to={"/projects/portfolio"}>
+                <img
+                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/MC%20Web.png?t=2024-04-09T20%3A07%3A18.300Z"
+                  alt="MC Projects Logo"
+                  className="project-img"
+                />
+              </Link>
+              <Link to={"/projects/portfolio"}>
+                <h4 className="project-title">MC Projects Portfolio</h4>
+              </Link>
+              <div className="project-tecnologies">
+                <p className="text">Tecnologías usadas:</p>
+                <div className="tec-icons">
+                  <BiLogoReact className="tec-icon" />
+                  <BiLogoCss3 className="tec-icon" />
+                  <BiLogoNodejs className="tec-icon" />
+                  <BiLogoGithub className="tec-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="main-project project-container">
+              <div className="project-details">
+                <p>Foro</p>
+                <p>2023</p>
+              </div>
+              <Link to={"/projects/forobolso"}>
+                <img
+                  src="https://qcqbvjvbppwpnrwdnpdq.supabase.co/storage/v1/object/public/mcprojects-folder/ForoBolso.png?t=2024-04-09T20%3A11%3A01.169Z"
+                  alt="ForoBolso.uy"
+                  className="project-img"
+                />
+              </Link>
+              <Link to={"/projects/forobolso"}>
+                <h4 className="project-title">ForoBolso</h4>
+              </Link>
+              <div className="project-tecnologies">
+                <p className="text">Tecnologías usadas:</p>
+                <div className="tec-icons">
+                  <BiLogoJavascript className="tec-icon" />
+                  <BiLogoCss3 className="tec-icon" />
+                  <BiLogoMongodb className="tec-icon" />
+                  <BiLogoNodejs className="tec-icon" />
+                  <BiLogoGithub className="tec-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="main-project project-container">
+              <div className="project-details">
                 <p>E-Commerce</p>
                 <p>2023</p>
               </div>

@@ -8,6 +8,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/Footer";
 import Doppios from "./projects/Doppios";
+import Forobolso from "./projects/Forobolso";
+import Portfolio from "./projects/Portfolio";
 import { useEffect } from "react";
 import PacaCamp from "./projects/PacaCamp";
 import PosterJanine from "./projects/PosterJanine";
@@ -31,6 +33,8 @@ function App() {
           <Route path="clients" element={<Clients />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects/doppios" element={<Doppios />} />
+          <Route path="projects/forobolso" element={<Forobolso />} />
+          <Route path="projects/portfolio" element={<Portfolio />} />
           <Route path="projects/paca-campeon" element={<PacaCamp />} />
           <Route path="projects/poster-janine" element={<PosterJanine />} />
           <Route path="projects/poster-bailazo" element={<PosterBailazo />} />
