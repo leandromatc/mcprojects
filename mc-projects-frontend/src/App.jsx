@@ -25,7 +25,6 @@ function App() {
   }, [location.pathname]);
   return (
     <>
-      <Navbar />
       <AnimatePresence>
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
