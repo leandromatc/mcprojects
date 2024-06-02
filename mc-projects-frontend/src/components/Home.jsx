@@ -8,9 +8,7 @@ function Home() {
   return (
     <AnimatedPages>
       <div className="container">
-        <h1 className="text-white font-bold text-2xl">
-          ¡Nos estámos renovando!
-        </h1>
+        <h1>¡Nos estámos renovando!</h1>
       </div>
     </AnimatedPages>
   );
