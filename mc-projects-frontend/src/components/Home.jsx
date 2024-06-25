@@ -9,6 +9,7 @@ function Home() {
     <AnimatedPages>
       <div className="container">
         <h1>¡Nos estámos renovando!</h1>
+        <p>Pronto novedades.</p>
       </div>
     </AnimatedPages>
   );
